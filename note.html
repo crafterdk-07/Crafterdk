@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Note for Ansuriya ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="container">
+    <section class="card intro-card">
+      <div class="badge">for <span id="crush-name">Ansuriya</span> ✨</div>
+      <h1 id="typewriter" class="typewriter"></h1>
+      <p class="sub">ek chhota sa digital note… sirf tumhare liye 💌</p>
+      <button class="btn primary" id="open-note">Open the Note</button>
+    </section>
+
+    <section class="card note-card" id="note-card">
+      <div class="note-outer">
+        <div class="note-inner" id="note-flip">
+          <div class="note-face note-front">
+            <div class="note-paper">
+              <h2>Dear <span class="accent" id="note-name">Ansuriya</span>,</h2>
+              <p class="note-text">
+                Tumhari muskurahat mein kuchh to baat hai—jaise subah ki halki dhoop.
+                Roz sochta hoon kaise bataun, phir laga… kyun na seedha dil ki baat keh doon?
+              </p>
+              <p class="note-text">
+                Mujhe tum par bada <strong>crush</strong> hai. Tumhare saath har chhoti baat bhi
+                khaas lagti hai. Agar tum ready ho, to main tumhe ek coffee date pe le jaana chahta hoon—
+                bina kisi jaldi, bas hum, kuchh hasi, aur thoda sa waqt. ☕🌸
+              </p>
+              <p class="sign">— dil se</p>
+              <button class="btn ghost" id="flip-note">P.S. aur bhi…</button>
+            </div>
+          </div>
+          <div class="note-face note-back">
+            <div class="note-paper">
+              <h3>P.S.</h3>
+              <ul class="ps-points">
+                <li>Tumhari awaaz = favourite playlist 🎶</li>
+                <li>Tumhari aankhon mein mini-galaxy ✨</li>
+                <li>Aur haan, tum muskurao to time slow ho jata hai!</li>
+              </ul>
+              <button class="btn ghost" id="flip-back">Wapas</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <p class="sub ask">kya tum mere saath coffee pe chalogi?</p>
+        <div class="btn-row">
+          <button class="btn success" id="btn-yes">Yes 😊</button>
+          <button class="btn alt" id="btn-maybe">Maybe 🤍</button>
+          <button class="btn danger evasive" id="btn-no">No 😅</button>
+        </div>
+      </div>
+    </section>
+
+    <dialog id="result-modal" class="modal">
+      <div class="modal-card">
+        <h3 id="result-title">Yay! 🎉</h3>
+        <p id="result-text">Iss weekend coffee? main place pick kar leta hoon.</p>
+        <button class="btn primary" id="close-modal">Done</button>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="footer">
+    <span>crafted with 💖 + HTML/CSS/JS</span>
+  </footer>
+
+</body>
+</html>
